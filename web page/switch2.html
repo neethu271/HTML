@@ -1,0 +1,43 @@
+<html>
+    <head>
+      
+    </head>
+     
+    <body>
+
+        <select id="Items" onchange="Details()">
+             <option value="Tea">Tea</option>
+             <option value="Veg noodels">Veg noodels</option>
+             <option value="chicken biryani">chicken biryani</option>
+             <option value="Dosa">Dosa</option>
+             <option value="lassi">lassi</option>
+        </select>
+
+        <h1 id="Itemsinfo"></h1>
+
+        <script>
+
+            Details();
+
+            function Details(){
+        
+    var Items = document.getElementById("Items").value;
+
+      switch(Items){
+
+        case "Tea": document.getElementById("Itemsinfo").innerHTML="tea powder, water, milk ,garlie leaves."; break;
+        case "Veg noodels": document.getElementById("Itemsinfo").innerHTML="noodles,all vegitable peaces ,masala powders...etc"; break;
+        case "chicken biryani": document.getElementById("Itemsinfo").innerHTML="chicken , malasa, rice, ...etc"; break;
+        case "Dosa": document.getElementById("Itemsinfo").innerHTML="A dosa is a thin rice Pancake or crepe, originating from South India, made from a fermented batter predominantly consisting of lentils and rice"; break;
+        case "lassi": document.getElementById("Itemsinfo").innerHTML="Lassi is a popular traditional dahi-based drink that originated in the Indian Subcontinent. Lassi is a blend of yoghurt, water, spices and sometimes fruit. Namkeen lassi is similar to doogh, while sweet and mango lassis are like milkshakes. Lassi may be infused with cannabis in the form of bhang."; break;
+
+      }
+
+    }
+
+
+
+        </script>
+
+    </body>
+</html>

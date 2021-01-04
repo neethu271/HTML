@@ -1,0 +1,42 @@
+<html>
+    <head>
+      
+    </head>
+     
+    <body>
+
+        <select id="city" onchange="places()">
+             <option value="Hyderabad">Hyderabad</option>
+             <option value="Secunderabad">Secunderabad</option>
+             <option value="Banglore">Banglore</option>
+             <option value="Chennai">Chennai</option>
+        </select>
+
+        <h1 id="cityinfo"></h1>
+
+        <script>
+
+             places();
+
+            function places(){
+        
+    var city = document.getElementById("city").value;
+
+      switch(city){
+
+        case "Hyderabad": document.getElementById("cityinfo").innerHTML="Charminar, birla temple"; break;
+        case "Secunderabad": document.getElementById("cityinfo").innerHTML="Temple,clock tower"; break;
+        case "Banglore": document.getElementById("cityinfo").innerHTML="majestic"; break;
+        case "Chennai": document.getElementById("cityinfo").innerHTML="beach"; break;
+    
+
+      }
+
+    }
+
+
+
+        </script>
+
+    </body>
+</html>

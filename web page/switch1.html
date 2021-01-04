@@ -1,0 +1,42 @@
+<html>
+    <head>
+      
+    </head>
+     
+    <body>
+
+        <select id="country" onchange="places()">
+             <option value="India">India</option>
+             <option value="USA">USA</option>
+             <option value="China">China</option>
+             <option value="Australia">Australia</option>
+        </select>
+
+        <h1 id="countryinfo"></h1>
+
+        <script>
+
+             places();
+
+            function places(){
+        
+    var country = document.getElementById("country").value;
+
+      switch(country){
+
+        case "India": document.getElementById("countryinfo").innerHTML="Telangana , Ap , karnataka ,kelera, etc"; break;
+        case "USA": document.getElementById("countryinfo").innerHTML="Florida , California , Texas ,etc"; break;
+        case "China": document.getElementById("countryinfo").innerHTML="Hainan , yunnan , hunan,shandong, etc."; break;
+        case "Australia": document.getElementById("countryinfo").innerHTML="Vistoria , queensland ,etc..."; break;
+    
+
+      }
+
+    }
+
+
+
+        </script>
+
+    </body>
+</html>

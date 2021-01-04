@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+      
+     <body>
+
+         <form>
+
+           Username: <input type="text" id="username">
+           Password: <input type="password" id="password">
+
+            <button onclick="login()">Login</button>
+
+         </form>
+
+          <script>
+          
+             function login(){
+                 event.preventDefault();
+           var username_value= document.getElementById("username").value;
+           var password_value= document.getElementById("password").value;
+
+              if(username_value == "sai" && password_value == "sai"){
+                  alert("login success");
+              }
+              else
+              {
+                  alert("login failure");
+              }
+
+
+             }
+          
+          </script>
+
+     </body>
+</html>

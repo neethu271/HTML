@@ -1,0 +1,33 @@
+<html>
+
+   <head>
+
+   </head>
+
+    <body>
+
+          <form>
+           Username: <input type="text" id="username" placeholder="username or phone number">
+           Password: <input type="password" id="password">
+           <button onclick="validate()">Login</button>
+          </form>
+
+          <script>
+
+               function validate(){
+
+                event.preventDefault();
+
+                var username=document.getElementById("username").value;
+                var password= document.getElementById("password").value;
+
+                 ((username == "sai" || username== "999003345")&& password ==="sai") ? alert("login success"): alert("login failure");
+
+
+               }
+
+          </script>
+
+    </body>
+
+</html>

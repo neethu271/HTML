@@ -1,0 +1,65 @@
+Javascript:
+
+JS is a scripting language which is used to provide dynamic nature to 
+the web pages.
+
+* JS was developed by brenden eich to support netscape navigator browser.
+
+
+* Inital Name of JS was livescript, later changed to JavaScript.
+
+
+* Java and Javascript are two different technologies, there is no 
+relationship between them.
+
+
+* we use <script> tag to write JS code in html files.
+
+
+
+Variables:
+
+A variable is an identifier which is used to refer some data.
+
+syntax:
+
+ var var_name= value;
+
+ var age=20;
+
+ var -> keyword 
+ age -> variable name 
+ 20 -> data
+ 
+ data -> number, string, boolean, arrays and objects.
+
+var age=20;
+console.log(age);
+
+var username="ravikumar";
+
+console.log(username);
+
+var isNRI= false;
+
+console.log(isNRI);
+
+var users=["ravi","kiran","rajesh"];
+
+console.log(users);
+
+var user= {
+      name:"ravi"
+}
+
+console.log(user);
+
+
+Types of variables:
+
+There are 2 types of variables in js,
+
+1. local variable  : A variable which is created inside a function is known 
+as local variable.
+2. global variable: A variable which is created outside of a function 
+is known as global variable.

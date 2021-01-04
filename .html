@@ -1,0 +1,23 @@
+<body>
+
+    <form>
+        <label>Username</label> <input id="username" type="text"><br><br>
+        <label>Password</label> <input id="password" type="text"><br><br>
+        <button type="button" onclick="validateLogin()">Submit</button>
+    </form>
+
+    <script>
+
+        function validateLogin() {
+
+            event.preventDefault();
+            
+            var dbUsername = "ravi";
+            var dbPassword = "ravi";
+            var user = document.getElementById("username").value;
+            var pwd = document.getElementById("password").value;
+
+            !(user == dbUsername) ? alert("Invalid Username") : !(pwd == dbPassword) ? alert("Invalid Password") : alert("Login Successfull");
+        }
+    </script>
+</body>
