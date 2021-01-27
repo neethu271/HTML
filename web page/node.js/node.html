@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+        <ul id="products">
+
+        </ul>
+
+
+        <script>
+            
+            var products=[
+            {
+               name: "Boult Audio ProBass Flow X Bluetooth Headset  (Black, In the Ear)",
+               rating:"4.1",
+               imgsrc:"https://rukminim1.flixcart.com/image/416/416/kcp4osw0/headphone/w/a/u/probass-flow-x-boult-audio-original-imaftrbse38vqhuw.jpeg?q=70",
+               price: 2000
+
+            },
+            {
+                name: "realme Buds Air Neo Bluetooth Headset  (White, True Wireless)#JustHere",
+                rating:"4",
+                imgsrc: "https://rukminim1.flixcart.com/image/416/416/kb6tyfk0/headphone/k/v/b/rma205-realme-original-imafsh3wcdggedct.jpeg?q=70",
+                price: 8000
+            },
+            {
+                name: "BQ2125 FLYNN Analog Watch - For Men",
+                rating:"4.3",
+                imgsrc:"https://rukminim1.flixcart.com/image/789/947/jbzedu80/watch/v/h/f/bq2125-fossil-original-imaff7pjq7ya9bw6.jpeg?q=50",
+                price: 5000
+            },
+            {
+                name: "BQ1126 Flynn Analog Watch - For Men",
+                rating:"4.2",
+                imgsrc:"https://rukminim1.flixcart.com/image/789/947/jwgple80/watch/p/y/f/bq1126-fossil-original-imafh4yb9dzrkhbs.jpeg?q=50",
+                price: 7000
+            },
+
+        ]
+
+        var products= document.getElementById("products");
+
+            for(var i=0;i<productList.length;i++){
+
+              var product=productList[i];
+              
+              products.innerHTML+="<li>"+product.name + "<img height='100px' width='100px'='"+ product.imgsrc+"'>" + "&nbsp;&nbsp;&nbsp;&nbsp; <br>"+ product.price +"</li>"+ "<br><br>";
+             
+              product++;
+        
+            }
+        
+
+        </script>
+
+    </body>
+
+</html>

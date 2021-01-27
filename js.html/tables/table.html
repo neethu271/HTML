@@ -1,0 +1,58 @@
+<html>
+    <head>
+
+    </head>
+     <body>
+
+         <table id="table" border="1">
+
+         </table>
+
+        <script>
+         
+           var customers= [
+               {
+                   id:101,
+                   name:"gopal",
+                   address:"Hyderabad",
+                   tech:"Java"
+               },
+               {
+                   id:102,
+                   name:"kiran",
+                   address:"Secunderabad",
+                   tech:"html"
+               },
+               {
+                   id:103,
+                   name:"rajesh",
+                   address:"Banglore",
+                   tech:"css"
+               }
+           ];
+
+            var colums=Object.keys(customers[0]);
+
+            console.log(colums)
+
+            var thead="<tr>";
+
+            for(var i=0;i<colums.length;i++){
+                thead=thead+ "<th>"+ colums[i]+ "</th>";
+            }
+            console.log(thead+ "</tr>");
+
+            var tbody="";
+
+            for(var j=0;j<customers.length;j++){
+                var customer=customers[j];
+              tbody=tbody+"<tr> <td>"+customer.id + "</td>"+ "<td>"+customer.address+"</td>"+ "<td>"+ customer.name + "</td>"+ "<td>"+ customer.tech + "</td> </tr>";
+            }      
+            
+            console.log(thead+ tbody);
+
+            document.getElementById('table').innerHTML=thead + tbody;
+         </script>
+
+     </body>
+</html>

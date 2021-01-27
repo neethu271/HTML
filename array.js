@@ -1,6 +1,6 @@
-var arr=[100,200,300,400,500];
+var arr=[username];
 
-console.log(arr);
+console.log(arry);
 
 console.log(arr[0]);
 console.log(arr[3]);

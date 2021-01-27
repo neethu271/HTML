@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+
+<body>
+
+    <table id="products" border="1">
+
+    </table>
+
+    <script>
+        var products = [
+            {
+                id: 101,
+                name: "Product1",
+                brand: "brand1",
+                category: "Category 1"
+            },
+            {
+                id: 102,
+                name: "Product2",
+                brand: "brand1",
+                category: "Category 1"
+            },
+            {
+                id: 103,
+                name: "Product3",
+                brand: "brand1",
+                category: "Category 1"
+            },
+            {
+                id: 104,
+                name: "Product4",
+                brand: "brand1",
+                category: "Category 1"
+            },
+            {
+                id: 105,
+                name: "Product5",
+                brand: "brand1",
+                category: "Category 1"
+            }
+        ]
+
+        var columns = Object.keys(products[0]);
+        
+        var thead = "<tr>";
+        for (var i = 0; i < columns.length; i++) {
+            thead = thead + "<th>" + columns[i] + "</th>"
+        }
+
+        var tbody = "";
+        for (var j = 0; j < products.length; j++) {
+            var product = products[j];
+            tbody = tbody + "<tr><td>" + product.id + "</td>" + "<td>" + product.name + "</td>" + "<td>" + product.brand + "</td>" + "<td>" + product.category + "</td></tr>";
+        }
+
+        document.getElementById("products").innerHTML = thead + tbody;
+
+    </script>
+
+</body>
+
+</html>

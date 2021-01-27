@@ -1,0 +1,77 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+         <form>
+
+            Enter Task: <input type="text" id="task">
+          
+            <button onclick="addTask()">Add</button>
+
+         </form>
+
+           <ul id="tasks">
+
+           </ul>
+
+            <script>
+
+                 var allTasks=[];
+               function addTask(){
+                event.preventDefault();
+               var task_value =  document.getElementById("task").value;
+                var task= {
+                    taskId:1,
+                    taskname:task_value
+                } 
+               allTasks.push(task);
+                displayTasks();
+               }
+
+            function displayTasks(){
+                  var tasks=document.getElementById('tasks');
+                    tasks.innerHTML="";
+
+                   allTasks.forEach(function(task){
+                    
+                       tasks.innerHTML=tasks.innerHTML+ "<li>"+ task.taskname+" &nbsp;&nbsp; taskID:" + task.taskId +"<input id='cb' onclick='x("+task.taskId+")' type='checkbox'>"+"</li>";
+                    
+                   })
+
+            }
+
+            function x(taskId){
+                event.preventDefault();
+               var cb = document.getElementById('cb');
+               console.log('taskId',taskId);
+
+               if(cb.checked == true){
+                    alert("Strike it");
+
+                    console.log("BEFORE: allTasks", allTasks);
+
+                    allTasks.forEach(function(task){
+                    
+                        if(task.taskId == taskId) {
+                              task.taskname= "<del>" + task.taskname+ "</del>"
+                        }
+                })
+                displayTasks();
+                console.log("AFTER: allTasks", allTasks);
+                
+                     
+               }
+               else
+               {
+                   alert("unstrike it");
+               }
+            }
+
+            
+            </script>
+
+     </body>
+</html>

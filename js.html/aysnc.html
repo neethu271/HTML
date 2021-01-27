@@ -1,0 +1,23 @@
+
+<script>
+(function(){
+
+var http=new XMLHttpRequest();
+
+http.open('GET','config.json');
+
+http.send()
+
+http.onreadystatechange = function(){
+  
+    if(http.responseText != ""){
+       initializeApp();
+    }
+}
+})()
+function initializeApp(){
+   alert("App Initialized")
+}
+</script>
+
+
