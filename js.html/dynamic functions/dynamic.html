@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+         <form>
+            Username: <input onchange="usernamevalue()" type="text" id="username">
+             <button  id="btn">Submit</button>
+         </form>
+
+         <script>
+         
+               var btn=document.getElementById("btn");
+
+               function usernamevalue(){
+
+                  var username= document.getElementById("username").value;
+                  if(username == "customer"){
+                       btn.onclick=customer; 
+                  }
+                  else
+                  {
+                      btn.onclick=admin;
+                  }
+               }
+               function customer(){
+                   alert("customer login...");
+               }
+               function admin(){
+                   alert("admin login.....");
+               }
+               
+
+        
+         
+         </script>
+
+
+     </body>
+</html>

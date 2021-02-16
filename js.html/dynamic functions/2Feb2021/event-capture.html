@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <style>
+        body * {
+          margin: 10px;
+          border: 1px solid blue;
+        }
+      </style>
+
+</head>
+ <body>
+    <form>FORM
+        <div>DIV
+          <p>P</p>
+        </div>
+      </form>
+
+      <script>
+      
+           var p= document.querySelector("p");
+           var form= document.querySelector("form");
+           var div= document.querySelector("div");
+
+
+           p.addEventListener('click', function(){
+                alert("Para called");
+ 
+           }, {capture:true})
+           form.addEventListener('click', function(){
+                alert("form called");
+           },{capture:true})
+           div.addEventListener('click', function(){
+                alert("div called");
+           },{capture:true})
+      
+      </script>
+ </body>
+
+</html>
+
+  

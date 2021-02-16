@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+        <form>
+          Enter password:<input type="text" id="password"> <span id="pwdmsg"></span>
+
+          <button onclick="pwdcheck()">Submit</button>
+
+        </form>
+
+         <script>
+          
+                function pwdcheck(){
+                    event.preventDefault();
+                    var pwd=document.getElementById("password").value;
+                    var pattern=/(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W])[\w\W]{8,}/;
+                    if(pattern.test(pwd)){
+                         document.getElementById("pwdmsg").innerHTML="PWD ACCEPTED";
+                    }
+                    else
+                    {
+                        document.getElementById("pwdmsg").innerHTML="PWD not accepted";
+                    }
+                }
+            
+         
+         </script>
+
+     </body>
+</html>

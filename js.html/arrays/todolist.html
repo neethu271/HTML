@@ -37,13 +37,13 @@
 
                    allTasks.forEach(function(task){
                     
-                       tasks.innerHTML=tasks.innerHTML+ "<li>"+ task.taskname+" &nbsp;&nbsp; taskID:" + task.taskId +"<input id='cb' onclick='x("+task.taskId+")' type='checkbox'>"+"</li>";
+                       tasks.innerHTML=tasks.innerHTML+ "<li>"+ task.taskname+" &nbsp;&nbsp; taskID:" + task.taskId +"<input id='cb' onclick='k("+task.taskId+")' type='checkbox'>"+"</li>";
                     
                    })
 
             }
 
-            function x(taskId){
+            function k(taskId){
                 event.preventDefault();
                var cb = document.getElementById('cb');
                console.log('taskId',taskId);
