@@ -1,0 +1,15 @@
+SPA: Single Page Application
+
+The complete application runs on a single page (index.html), any navigation 
+happens in application will change the content in index.html without 
+refreshing / reloading the web page.
+
+
+To implement SPA, we use react-router-dom
+
+a ->  NavLink 
+
+href -> to 
+
+We use a class called HashRouter to specify routes.
+

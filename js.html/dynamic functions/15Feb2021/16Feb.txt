@@ -1,0 +1,80 @@
+What is ReactJS?
+
+ReactJS is an opensource, javascript library which is used to develop 
+UI(User Interfaces).
+
+ReactJS uses javascript as its core.
+
+ReactJS is developed by Facebook.
+
+ReactJS is used in multiple apps such as netflix, insta, facebook,linkedin...
+
+Environment Setup:
+
+To install react, we need to download react using npm.
+
+npm - node package manager which manages different packages (libraries) in a repository 
+called npmjs.
+
+
+To install react,
+
+npm install create-react-app 
+
+To run,
+
+npm start 
+
+It generally runs on port 3000
+
+
+Features of React:
+
+1. Single Page Application:
+
+ The complete application runs on a single page where  all the 
+ user interaction through links will never navigate to a new 
+ page, instead the single page brings the template and displays 
+ in it.
+
+2. Progressive Web Apps (PWAs):
+
+A progressive web application is a type of application software delivered through the web, built using common web technologies including HTML, CSS and JavaScript. It is intended to work on any platform that uses a standards-compliant browser, including both desktop and mobile devices.
+
+3. Virtual DOM
+
+4. Performance 
+
+5. Facebook -> open source 
+
+6. Enhanced Support from Community
+
+7. Supports State Management Libraries  (Redux,Mobx,Flux)..
+
+8. React Native
+
+
+It support MVC Architecture.
+
+
+MVC 
+
+M- Model - data (Redux)
+V - View -  UI  (React)
+C - Controller - mediator of the application (Components)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+state:
+
+state is a predefined object which is used to store the data of a component.
+
+we need to assign only object to the state.
+
+state must be initialized in constructor.
+
+class Component extends React.Component{
+  
+    constructor(){
+           this.state={
+
+           }
+    }
+}
+
+Problem Statement:
+
+Implement a login page and display the values entered by the user on the UI.
+
+
+
+In ES6, We have computed propery.
+
+
+
+
+

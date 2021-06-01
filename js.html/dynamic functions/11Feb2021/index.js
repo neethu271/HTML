@@ -23,7 +23,7 @@ sciCalc.sub(20,10);
 
 var calc= new Calc();
 
-calc.cube(10);
+sciCalc.cube(10);
 
 /*Problem Statement:
 Create a customer class that should contain a function called createAccount 
@@ -31,7 +31,7 @@ which takes name, address, age, adharcard number*/
 
 //name, address, age, adharcard number
 
-class Customer{
+/*class Customer{
     name;
     address;
     age;
@@ -47,5 +47,5 @@ class Customer{
 
 var customer= new Customer();
 customer.createAccount("ravi","hyd",21,9010101);
-console.log(customer);
+console.log(customer);*/
 

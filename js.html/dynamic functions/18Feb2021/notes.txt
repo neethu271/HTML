@@ -1,0 +1,49 @@
+Problem Statement:
+
+Create two class components login  and register and 
+display them on UI.
+
+
+
+PS:
+
+Create 3 components comp1, comp2, comp3 and display them on UI 
+
+
+O/P:
+
+ This is component 1
+ This is component 2
+ This is component 3
+
+
+
+ PS:
+  Create a component called User , send username from App Comp 
+  to User comp. 
+
+  display username in User Component 
+
+
+   App.js :
+
+   <User username="ravikumar">
+
+
+   User.js:
+
+   {this.props.username}
+
+
+
+PS:  Create a component called message , send an object from 
+App comp to Message. 
+
+  var obj={
+      name:"ravi",
+      sender:"kiran",
+      message:"hello!"
+  }
+
+
+  o/p:  ravi kiran  hello
